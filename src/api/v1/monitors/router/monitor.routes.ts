@@ -1,18 +1,24 @@
 import {Router} from "express";
-
+import {
+    createMonitor, deleteMonitor, getAllMonitors, getMetrics,
+    getMonitor, heartbeat, pauseMonitor
+} from "../controller/monitors.controller";
 
 const router = Router();
 
-router.get("/", (_,__)=>{});
+router.get("/", getAllMonitors);
 
-router.post("/", (_,__)=>{});
+router.post("/", createMonitor);
 
-router.get("/:id", (_,__)=>{});
+router.get("/metrics", getMetrics);
 
-router.delete("/:id",(_,__)=>{});
+router.get("/:id", getMonitor);
 
-router.post("/:id/heartbeat",(_,__)=>{});
+router.delete("/:id", deleteMonitor);
 
-router.post("/:id/pause",(_,__)=>{});
+router.post("/:id/heartbeat", heartbeat);
+
+router.post("/:id/pause", pauseMonitor);
+
 
 export default router;

@@ -1,5 +1,5 @@
 
-import {sanitizeMonitorData} from "../utils/monitor.utils.js";
+import {sanitizeMonitorData} from "../utils/monitor.utils";
 import {Monitor} from "../types/types";
 import {AppError} from "../middleware/error.middleware";
 

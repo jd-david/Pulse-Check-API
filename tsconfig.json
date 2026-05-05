@@ -15,7 +15,11 @@
 
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "isolatedModules": true
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "node_modules/@types/jest/index.d.ts"
+  ]
 
 }

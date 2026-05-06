@@ -44,7 +44,7 @@ To get the application running locally, follow these steps:
    ```bash
    npm run dev
    ```
-   The server will start on port 3000 (or the port defined in your environment).
+   The server will start on port 8080.
 
 3. **Build and start for production:**
    ```bash
@@ -60,7 +60,7 @@ To get the application running locally, follow these steps:
 ## 3. API Documentation
 
 ### Base URL
-`http://localhost:3000` (or the configured `PORT`)
+`http://localhost:8080` (or the configured `PORT`)
 
 ### Endpoints
 
